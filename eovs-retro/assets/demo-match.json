@@ -1,0 +1,184 @@
+{
+  "match": {
+    "label": "匿名合成核账演示",
+    "company": "队A",
+    "synthetic": true
+  },
+  "rules": {
+    "ordinary_quarter_rate": 0.01,
+    "abnormal_quarter_rate": 0.04,
+    "abnormal_rolls_into_ordinary": true,
+    "abnormal_adds_to_cash": true,
+    "liability_components_complete": true,
+    "sales_budget_fraction": 0.5,
+    "ccer_cap_fraction": 0.1,
+    "ccer_cap_base": "current_emission",
+    "ccer_cap_rounding": "floor"
+  },
+  "opening": {
+    "equity": 1000,
+    "cash": 0,
+    "normal_debt": 0,
+    "abnormal_debt": 0,
+    "finished_units": 0,
+    "carbon_gap": 0
+  },
+  "quarters": [
+    {
+      "quarter": 1,
+      "equity": 1100,
+      "net_profit": 100,
+      "dividend": 0,
+      "assets": 1800,
+      "liabilities": 700,
+      "cash": 400,
+      "net_cash_flow": 200,
+      "normal_debt": 500,
+      "abnormal_debt": 200,
+      "borrow": 500,
+      "repay": 0,
+      "bank_interest": 5,
+      "budget_opening_cash": 0,
+      "sales_revenue": 800,
+      "other_income": 0,
+      "total_expense": 700,
+      "expense_components": [
+        495,
+        5,
+        200
+      ],
+      "cash_out": 1100,
+      "cash_out_components": [
+        700,
+        400
+      ],
+      "production_units": 100,
+      "finished_units": 0,
+      "markets": [
+        {
+          "label": "市场X",
+          "price": 8,
+          "sales": 100,
+          "revenue": 800,
+          "demand": 130,
+          "end_stock": 0,
+          "effective_capacity": 120
+        }
+      ],
+      "carbon": {
+        "current_emission": 60,
+        "notice_net_complied": 40,
+        "gap": 20,
+        "fine_per_ton": 10,
+        "fine": 200,
+        "ccer_used": 0,
+        "gross_cea_used": 40
+      },
+      "other_liabilities": 0
+    },
+    {
+      "quarter": 2,
+      "equity": 1300,
+      "net_profit": 200,
+      "dividend": 0,
+      "assets": 2150,
+      "liabilities": 850,
+      "cash": 450,
+      "net_cash_flow": -100,
+      "normal_debt": 700,
+      "abnormal_debt": 150,
+      "borrow": 0,
+      "repay": 0,
+      "bank_interest": 13,
+      "budget_opening_cash": 400,
+      "sales_revenue": 900,
+      "other_income": 0,
+      "total_expense": 700,
+      "expense_components": [
+        467,
+        13,
+        220
+      ],
+      "cash_out": 1000,
+      "cash_out_components": [
+        700,
+        300
+      ],
+      "production_units": 120,
+      "finished_units": 20,
+      "markets": [
+        {
+          "label": "市场X",
+          "price": 9,
+          "sales": 100,
+          "revenue": 900,
+          "demand": 100,
+          "end_stock": 20,
+          "effective_capacity": 100
+        }
+      ],
+      "carbon": {
+        "current_emission": 80,
+        "notice_net_complied": 58,
+        "gap": 22,
+        "fine_per_ton": 10,
+        "fine": 220,
+        "ccer_used": 8,
+        "gross_cea_used": 70
+      },
+      "other_liabilities": 0
+    },
+    {
+      "quarter": 3,
+      "equity": 1350,
+      "net_profit": 50,
+      "dividend": 0,
+      "assets": 2100,
+      "liabilities": 750,
+      "cash": 650,
+      "net_cash_flow": 200,
+      "normal_debt": 750,
+      "abnormal_debt": 0,
+      "borrow": 0,
+      "repay": 100,
+      "bank_interest": 12,
+      "budget_opening_cash": 450,
+      "sales_revenue": 1000,
+      "other_income": 0,
+      "total_expense": 950,
+      "expense_components": [
+        718,
+        12,
+        220
+      ],
+      "cash_out": 800,
+      "cash_out_components": [
+        700,
+        100
+      ],
+      "production_units": 100,
+      "finished_units": 20,
+      "markets": [
+        {
+          "label": "市场X",
+          "price": 10,
+          "sales": 100,
+          "revenue": 1000,
+          "demand": 100,
+          "end_stock": 20,
+          "effective_capacity": 100
+        }
+      ],
+      "carbon": {
+        "current_emission": 100,
+        "notice_net_complied": 78,
+        "gap": 22,
+        "fine_per_ton": 10,
+        "fine": 220,
+        "ccer_used": 10,
+        "gross_cea_used": 90
+      },
+      "other_liabilities": 0
+    }
+  ]
+}

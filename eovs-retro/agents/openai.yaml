@@ -1,0 +1,4 @@
+interface:
+  display_name: "EOVS复盘Skill"
+  short_description: "逐季核账、前五对标、需求预测与碳资金联动，来自校赛第一名的Codex复盘"
+  default_prompt: "使用 $eovs-retro 结合本场数据和教学资料，复盘各季度与前五名，核查表格并给出有依据的优化方案。"

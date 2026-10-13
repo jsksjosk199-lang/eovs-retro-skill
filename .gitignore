@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+demo-output/
+inspection-output/
+private/
+raw-data/
+private-denylist.json
+*.xlsx
+*.xls
+*.zip
